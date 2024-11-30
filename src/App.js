@@ -10,7 +10,9 @@ export default function App() {
     <div className="overflow-x-hidden">
       <Navbar/>
       <Landing/>
+      <div className="mb-auto">
       <About/>
+      </div>
       <Projects/>
       <Skills/>
       <Footer/>
