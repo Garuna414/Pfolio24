@@ -7,7 +7,7 @@ import Footer from "./components/Footer"
 
 export default function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar/>
       <Landing/>
       <About/>
