@@ -4,32 +4,44 @@ import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import mail from "../assets/mail.png";
 import resume from "../assets/resume.pdf";
+import { motion } from "motion/react";
 
 export default function Landing() {
   const stack = ["C++", "PYTHON", "REACT", "EXPRESS", "TAILWIND"];
   return (
-    <div className="w-screen border-y-black flex flex-col items-center h-screen justify-center text-xl px-5" id="Top">
-      <div className="flex flex-col gap-1 mb-3 items-center">
+    <div
+      className="w-screen border-y-black flex flex-col items-center h-screen justify-center text-xl px-5"
+      id="Top"
+    >
+      <motion.div
+        className="flex flex-col gap-1 mb-3 items-center"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeInOut" } }}
+        viewport={{ margin: "-200px" }}
+      >
         <p className="font-mono">Hello! This is</p>
         <p className="text-red-600 font-medium md:text-5xl text-3xl">
           ANURAG NALKAR
         </p>
-      </div>
+      </motion.div>
       <div className="mb-10 flex flex-col items-center gap-2 w-full">
         <p className="md:text-lg text-base font-mono">Specialised in</p>
         <ul className="flex flex-row sm:gap-3 gap-2 font-mono flex-wrap justify-around min-w-fit">
           {stack.map((tech, key) => (
-            <li
+            <motion.li
               key={key}
               className="border border-black px-3 py-1 rounded-3xl md:text-lg text-base mb-2"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0, transition: { duration: key * 0.5, ease: "easeInOut" } }}
+              viewport={{ margin: "-50px" }}
             >
               {tech}
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
       <div className="md:mb-8 mb-12">
-        <button className="hover:bg-red-600 bg-white px-5 py-2 hover:text-white rounded-3xl hover:shadow-md border border-black hover:shadow-slate-400 transition-all ease-in-out duration-400 font-mono">
+        <button className="hover:bg-red-600 bg-white px-5 py-2 hover:text-white rounded-3xl hover:shadow-md border border-black hover:shadow-slate-400 hover:scale-110 transition-all ease-in-out duration-400 font-mono">
           <a
             href={resume}
             download="AnuragResume.pdf"

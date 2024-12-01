@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 
 export default function () {
   const fields = ["LANGUAGES", "FRAMEWORKS & LIBRARIES", "DATABASES", "OTHER"];
@@ -20,7 +21,19 @@ export default function () {
               {field}
             </p>
             <div>
-              <ul className="flex flex-row gap-3 flex-wrap">
+              <motion.ul
+                className="flex flex-row gap-3 flex-wrap"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: index * 0.5,
+                    ease: "linear",
+                    delay: 0.5,
+                  },
+                }}
+              >
                 {techs[index].map((tech, key) => (
                   <li
                     key={key}
@@ -29,7 +42,7 @@ export default function () {
                     {tech}
                   </li>
                 ))}
-              </ul>
+              </motion.ul>
             </div>
           </div>
         ))}

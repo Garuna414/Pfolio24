@@ -2,16 +2,31 @@ import React from "react";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import mail from "../assets/mail.png";
+import { motion } from "motion/react";
 
 export default function Footer() {
   return (
     <div className="Contact">
       <div className="px-5">
-        <p className="lg:text-5xl md:text-4xl text-2xl text-red-600 font-mono">CONTACT</p>
+        <p className="lg:text-5xl md:text-4xl text-2xl text-red-600 font-mono">
+          CONTACT
+        </p>
       </div>
-      <div className="flex flex-col justify-center items-center gap-5 p-5">
+      <motion.div
+        className="flex flex-col justify-center items-center gap-5 p-5"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 1,
+            ease: "easeInOut",
+            delay: 0.2,
+          },
+        }}
+      >
         <div>
-        <p className="font-mono text-lg">Thanks for visiting!</p>
+          <p className="font-mono text-lg">Thanks for visiting!</p>
         </div>
         <div className="px-4 py-2 border border-black rounded-3xl mb-5">
           <p className="md:text-2xl text-xl font-mono">Contact Me</p>
@@ -33,7 +48,7 @@ export default function Footer() {
             </a>
           </button>
         </div>
-      </div>
+      </motion.div>
       <div className="min-h-20 h-auto bg-slate-300 flex flex-col md:flex-row justify-center items-center md:gap-5 gap-2 font-mono py-5">
         <p className="md:translate-x-4">ANURAG NALKAR</p>
         <p className="md:translate-x-4">X</p>
