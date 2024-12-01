@@ -33,10 +33,11 @@ export default function Navbar() {
                 offset={-50}
                 duration={500}
 
+                key={index}
+
                 className="hover:bg-slate-400 hover:text-red-600 hover:font-semibold active:bg-slate-400 active:text-red-600 active:font-semibold rounded-md h-fit"
               >
                 <li
-                  key={index}
                   className="py-2 px-3 cursor-pointer font-mono hover:bg-red-500 hover:text-white hover:font-semibold active:bg-red-500 active:text-white rounded-md transition-all ease-in-out duration-400"
                   onClick={toggleMenu}
                 >
