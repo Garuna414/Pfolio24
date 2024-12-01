@@ -8,7 +8,7 @@ import resume from "../assets/resume.pdf";
 export default function Landing() {
   const stack = ["C++", "PYTHON", "REACT", "EXPRESS", "TAILWIND"];
   return (
-    <div className="w-screen border-y-black flex flex-col items-center h-screen justify-center text-xl px-5">
+    <div className="w-screen border-y-black flex flex-col items-center h-screen justify-center text-xl px-5" id="Top">
       <div className="flex flex-col gap-1 mb-3 items-center">
         <p className="font-mono">Hello! This is</p>
         <p className="text-red-600 font-medium md:text-5xl text-3xl">

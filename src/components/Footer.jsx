@@ -5,9 +5,9 @@ import mail from "../assets/mail.png";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="Contact">
       <div className="px-5">
-        <p className="md:text-5xl text-3xl text-red-600 font-mono">CONTACT</p>
+        <p className="lg:text-5xl md:text-4xl text-2xl text-red-600 font-mono">CONTACT</p>
       </div>
       <div className="flex flex-col justify-center items-center gap-10 p-5">
         <div className="px-4 py-2 border border-black rounded-3xl">

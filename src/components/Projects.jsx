@@ -9,9 +9,9 @@ export default function Projects() {
   ];
   const stack = [["REACT", "EXPRESS", "SQL", "SOLIDITY"]];
   return (
-    <div className="p-5 flex flex-col gap-5 h-screen">
+    <div className="p-5 flex flex-col gap-5 h-screen" id="Projects">
       <div>
-        <p className="md:text-5xl text-3xl text-red-600 font-mono">PROJECTS</p>
+        <p className="lg:text-5xl md:text-4xl text-2xl text-red-600 font-mono">PROJECTS</p>
       </div>
       <div className="flex flex-row h-full items-center">
         {titles.map((title, index) => (
