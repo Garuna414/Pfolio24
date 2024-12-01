@@ -9,8 +9,11 @@ export default function Footer() {
       <div className="px-5">
         <p className="lg:text-5xl md:text-4xl text-2xl text-red-600 font-mono">CONTACT</p>
       </div>
-      <div className="flex flex-col justify-center items-center gap-10 p-5">
-        <div className="px-4 py-2 border border-black rounded-3xl">
+      <div className="flex flex-col justify-center items-center gap-5 p-5">
+        <div>
+        <p className="font-mono text-lg">Thanks for visiting!</p>
+        </div>
+        <div className="px-4 py-2 border border-black rounded-3xl mb-5">
           <p className="md:text-2xl text-xl font-mono">Contact Me</p>
         </div>
         <div className="flex flex-row gap-4">

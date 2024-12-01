@@ -16,7 +16,7 @@ export default function About() {
           ABOUT ME
         </p>
       </div>
-      <div className="w-full flex md:flex-row flex-col h-full">
+      <div className="w-full flex md:flex-row flex-col h-full m-auto">
         <div className="md:w-2/3 flex flex-col md:h-full h-auto gap-5 justify-center">
           {headings.map((heading, key) => (
             <div key={key}>

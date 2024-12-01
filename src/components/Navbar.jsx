@@ -23,7 +23,7 @@ export default function Navbar() {
           <ul
             className={`${
               Toggle ? "visible" : "hidden"
-            } md:flex md:flex-row flex-col items-left md:gap-0 gap-2 z-5`}
+            } md:flex md:flex-row flex-col items-left md:gap-1 gap-2 z-5`}
           >
             {sections.map((section, index) => (
               <Link
@@ -37,7 +37,7 @@ export default function Navbar() {
               >
                 <li
                   key={index}
-                  className="py-2 px-3 cursor-pointer font-mono hover:bg-slate-400 hover:text-red-600 hover:font-semibold active:bg-slate-400 active:text-red-600 rounded-md"
+                  className="py-2 px-3 cursor-pointer font-mono hover:bg-red-500 hover:text-white hover:font-semibold active:bg-red-500 active:text-white rounded-md transition-all ease-in-out duration-400"
                   onClick={toggleMenu}
                 >
                   {section}

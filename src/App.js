@@ -11,7 +11,7 @@ export default function App() {
       <div>
         <Navbar />
       </div>
-      <div className="overflow-x-hidden mt-[68px]">
+      <div className="overflow-x-hidden mt-[68px] bg-gradient-to-br from-[#ffd4d4] to-[#f5f5f5]">
         <div>
           <Landing />
           <div className="mb-auto">
