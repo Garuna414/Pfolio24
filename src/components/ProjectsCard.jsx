@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function ProjectsCard({ data }) {
   return (
-    <div className="lg:w-1/3 md:w-1/2 md:min-w-[30vw] min-w-[80vw] h-auto border border-black rounded-3xl flex flex-col p-2">
+    <div className="lg:w-1/3 md:w-1/2 lg:min-w-[30vw] md:min-w-[40vw] min-w-[87vw] h-auto border border-black rounded-3xl flex flex-col p-2">
       <div className="h-auto w-full">
         <img
           src={data.image}
@@ -30,19 +30,23 @@ export default function ProjectsCard({ data }) {
               : null}
           </ul>
         </div>
-        <div className="flex flex-row gap-5 w-full">
+        <div className="flex flex-row gap-3 md:gap-5 w-full">
           <a
             href={data.url}
-            className="min-w-10 min-h-10 bg-white flex justify-center items-center rounded-3xl hover:scale-105 hover:bg-lime-400 hover:shadow-md hover:shadow-slate-400 transition-all ease-in-out duration-300 group p-2 gap-2"
+            className="min-w-10 min-h-10 bg-white flex justify-center items-center rounded-3xl hover:scale-105 hover:bg-lime-400 hover:shadow-md hover:shadow-slate-400 transition-all ease-in-out duration-300 group p-2 md:gap-2 gap-1"
           >
-            <img src={github} alt="Icon" />
-            <p className="font-mono text-black">SOURCE CODE</p>
+            <img src={github} alt="Icon" className="" />
+            <p className="font-mono text-black md:text-base text-sm text-center">
+              SOURCE CODE
+            </p>
           </a>
           <Link
             to={`/projects/${data.extension}`}
-            className="min-w-10 min-h-10 bg-white flex justify-center items-center rounded-3xl hover:scale-105 hover:bg-lime-400 hover:shadow-md hover:shadow-slate-400 transition-all ease-in-out duration-300 group py-2 px-3 gap-2"
+            className="min-w-10 min-h-10 bg-white flex justify-center items-center rounded-3xl hover:scale-105 hover:bg-lime-400 hover:shadow-md hover:shadow-slate-400 transition-all ease-in-out duration-300 group py-2 px-3 gap-2 text-center"
           >
-            <p className="font-mono text-black">READ MORE</p>
+            <p className="font-mono text-black md:text-base text-sm">
+              READ MORE
+            </p>
           </Link>
         </div>
       </div>
