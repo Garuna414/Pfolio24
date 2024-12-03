@@ -37,7 +37,7 @@ export default function ProjectView() {
     <div className="p-5 w-full h-auto min-h-screen flex flex-col gap-5">
       <div>
         <Link
-          to="/"
+          to="/home"
           className="px-3 py-2 rounded-3xl border border-black hover:scale-105 hover:bg-red-600 hover:shadow-md hover:shadow-black hover:text-white font-mono transition-all ease-in-out duration-300"
         >
           &lt;--

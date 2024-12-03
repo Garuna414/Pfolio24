@@ -12,7 +12,7 @@ export default function App() {
         </div>
         <div className="overflow-x-hidden mt-[68px] bg-gradient-to-br from-[#ffd4d4] to-[#f5f5f5]">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/projects/:name" element={<ProjectView />} />
           </Routes>
         </div>
