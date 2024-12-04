@@ -4,7 +4,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { motion } from "motion/react";
 
 export default function Navbar() {
-  const sections = ["Top", "About Me", "Projects", "Skills", "Contact"];
+  const sections = ["Top", "About Me", "Experience", "Projects", "Skills", "Contact"];
   const [Toggle, setToggle] = useState(false);
   function toggleMenu() {
     setToggle(!Toggle);
@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <div className="w-screen border-b-black h-auto fixed top-0 left-0 flex flex-col z-50 flex-wrap md:bg-white">
       <div className="w-full flex md:flex-row flex-col md:justify-between text-lg items-left ">
-        <div className="md:flex-none py-3 px-5 flex flex-row justify-between">
+        <div className="md:flex-none py-3 px-5 flex flex-row justify-between bg-white">
           <div className="my-auto font-mono">
             <RouterLink to="/">ANURAG NALKAR</RouterLink>
           </div>
@@ -35,20 +35,19 @@ export default function Navbar() {
             className={`${
               Toggle ? "visible" : "hidden"
             } md:flex md:flex-row flex-col items-left md:gap-1 gap-2 z-5 bg-white pb-3 px-5 md:pt-3`}
-            // <ul className="md:flex md:flex-row flex-col items-left md:gap-1 gap-2 z-5 bg-slate-100 pb-3 px-5 md:pt-3">
           >
             {sections.map((section, index) => (
               <Link
                 to={section}
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-60}
                 duration={500}
                 key={index}
                 className="hover:bg-slate-400 hover:text-red-600 hover:font-semibold active:bg-slate-400 active:text-red-600 active:font-semibold rounded-md h-fit"
               >
                 <li
-                  className="py-2 px-3 cursor-pointer font-mono hover:bg-red-500 hover:text-white hover:font-semibold active:bg-red-500 active:text-white rounded-md transition-all ease-in-out duration-400"
+                  className="py-2 px-2 lg:px-3 cursor-pointer font-mono hover:bg-red-500 hover:text-white hover:font-semibold active:bg-red-500 active:text-white rounded-md transition-all ease-in-out duration-400 "
                   onClick={toggleMenu}
                 >
                   {section}

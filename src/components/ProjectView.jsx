@@ -37,7 +37,7 @@ export default function ProjectView() {
           &lt;--
         </Link>
       </div>
-      <div className="h-full w-full p-5 flex flex-col gap-7">
+      <div className="h-full w-full p-3 flex flex-col gap-7">
         <div className="items-center">
           <img
             src={data.image}
