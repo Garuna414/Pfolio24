@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "motion/react";
 
-export default function () {
+export default function Skills() {
   const fields = ["LANGUAGES", "FRAMEWORKS & LIBRARIES", "DATABASES", "OTHER"];
   const techs = [
     ["C++", "PYTHON", "JAVASCRIPT", "HTML", "CSS"],
     ["REACT JS", "EXPRESS JS", "FRAMER MOTION", "TAILWIND CSS"],
     ["SQL", "MONGO DB"],
-    ["GIT", "GITHUB", "VS CODE"],
+    ["GIT", "GITHUB", "VS CODE", "THUNDER CLIENT"],
   ];
   return (
     <div className="p-5 flex flex-col h-screen" id="Skills">
@@ -33,6 +33,7 @@ export default function () {
                     delay: 0.5,
                   },
                 }}
+                viewport={{ once: true }}
               >
                 {techs[index].map((tech, key) => (
                   <li

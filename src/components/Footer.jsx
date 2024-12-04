@@ -24,6 +24,7 @@ export default function Footer() {
             delay: 0.2,
           },
         }}
+        viewport={{ once: true }}
       >
         <div>
           <p className="font-mono text-lg">Thanks for visiting!</p>

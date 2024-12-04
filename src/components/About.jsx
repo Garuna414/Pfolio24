@@ -34,7 +34,7 @@ export default function About() {
                   ease: "easeInOut",
                 },
               }}
-              viewport={{ amount: "all" }}
+              viewport={{ once: true }}
             >
               <p className="lg:text-3xl md:text-2xl text-xl text-red-600 font-mono text-center">
                 {heading}
@@ -58,6 +58,7 @@ export default function About() {
                 delay: 0.5,
               },
             }}
+            viewport={{ once: true }}
           >
             <img
               src={pfp}
