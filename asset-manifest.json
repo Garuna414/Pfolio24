@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Pfolio24/static/css/main.e4fed541.css",
-    "main.js": "/Pfolio24/static/js/main.e349c16c.js",
-    "static/js/453.afc9e461.chunk.js": "/Pfolio24/static/js/453.afc9e461.chunk.js",
-    "static/media/game2.png": "/Pfolio24/static/media/game2.705254c6f9aef85dd794.png",
-    "static/media/pfp.png": "/Pfolio24/static/media/pfp.c36f4d967430d963e2a3.png",
-    "static/media/blockchainWebsite.png": "/Pfolio24/static/media/blockchainWebsite.ed33629a6de17a0b6111.png",
-    "static/media/weather.png": "/Pfolio24/static/media/weather.4620694a6186053389cb.png",
-    "static/media/resume.pdf": "/Pfolio24/static/media/resume.d5659b41ce029b3795f5.pdf",
-    "index.html": "/Pfolio24/index.html",
-    "main.e4fed541.css.map": "/Pfolio24/static/css/main.e4fed541.css.map",
-    "main.e349c16c.js.map": "/Pfolio24/static/js/main.e349c16c.js.map",
-    "453.afc9e461.chunk.js.map": "/Pfolio24/static/js/453.afc9e461.chunk.js.map"
+    "main.css": "/static/css/main.e4fed541.css",
+    "main.js": "/static/js/main.3d43d1e9.js",
+    "static/js/453.afc9e461.chunk.js": "/static/js/453.afc9e461.chunk.js",
+    "static/media/game2.png": "/static/media/game2.705254c6f9aef85dd794.png",
+    "static/media/pfp.png": "/static/media/pfp.c36f4d967430d963e2a3.png",
+    "static/media/blockchainWebsite.png": "/static/media/blockchainWebsite.ed33629a6de17a0b6111.png",
+    "static/media/weather.png": "/static/media/weather.4620694a6186053389cb.png",
+    "static/media/resume.pdf": "/static/media/resume.d5659b41ce029b3795f5.pdf",
+    "index.html": "/index.html",
+    "main.e4fed541.css.map": "/static/css/main.e4fed541.css.map",
+    "main.3d43d1e9.js.map": "/static/js/main.3d43d1e9.js.map",
+    "453.afc9e461.chunk.js.map": "/static/js/453.afc9e461.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4fed541.css",
-    "static/js/main.e349c16c.js"
+    "static/js/main.3d43d1e9.js"
   ]
 }
