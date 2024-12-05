@@ -5,11 +5,9 @@ import github from "../assets/github.png";
 
 export default function ProjectView() {
   const { name } = useParams();
-  //   const [data, setData] = useState({});
-  //   useEffect(() => {
-  //     setData(projectData.name);
-  //   }, [name]);
-  //   console.log(data.title);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [data, setData] = useState([]);
   const [fEnd, setFEnd] = useState([]);
   const [bEnd, setBEnd] = useState([]);
