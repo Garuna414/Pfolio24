@@ -10,9 +10,12 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="p-5 flex flex-col gap-5 h-auto w-full min-h-[calc(100dvh-68px)]" id="Projects">
+    <div
+      className="p-5 flex flex-col gap-5 h-auto w-full min-h-[calc(100dvh-68px)]"
+      id="Projects"
+    >
       <div>
-        <p className="lg:text-5xl md:text-4xl text-2xl text-red-600 font-mono w-full">
+        <p className="lg:text-4xl md:text-3xl text-2xl text-red-600 font-heading w-full">
           PROJECTS
         </p>
       </div>

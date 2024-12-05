@@ -15,7 +15,7 @@ export default function About() {
       id="About Me"
     >
       <div>
-        <p className="lg:text-5xl md:text-4xl text-2xl text-red-600 font-mono">
+        <p className="lg:text-4xl md:text-3xl text-2xl text-red-600 font-heading">
           ABOUT ME
         </p>
       </div>
@@ -24,10 +24,10 @@ export default function About() {
           {headings.map((heading, key) => (
             <motion.div
               key={key}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, x: -100 }}
               whileInView={{
                 opacity: 1,
-                y: 0,
+                x: 0,
                 transition: {
                   duration: key * 0.5,
                   ease: "easeInOut",
@@ -35,10 +35,10 @@ export default function About() {
               }}
               viewport={{ once: true }}
             >
-              <p className="lg:text-3xl md:text-2xl text-xl text-red-600 font-mono text-center">
+              <p className="lg:text-2xl md:text-xl text-xl text-red-600 font-heading text-center">
                 {heading}
               </p>
-              <p className="text-justify lg:text-lg sm:text-base text-sm font-serif">
+              <p className="text-justify lg:text-lg sm:text-base text-sm font-body">
                 {content[key]}
               </p>
             </motion.div>
@@ -47,12 +47,12 @@ export default function About() {
         <div className="md:w-1/3 w-full flex flex-col md:p-0 p-5">
           <motion.div
             className="md:w-1/2 rounded-full overflow-hidden m-auto min-w-28 md:max-w-60 max-w-40 w-auto"
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{
               opacity: 1,
-              x: 0,
+              y: 0,
               transition: {
-                duration: 1,
+                duration: 0.5,
                 ease: "linear",
                 delay: 0.5,
               },

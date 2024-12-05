@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
-import { motion } from "motion/react";
 
 export default function Navbar() {
-  const sections = ["Top", "About Me", "Experience", "Projects", "Skills", "Contact"];
+  const sections = [
+    "Top",
+    "About Me",
+    "Experience",
+    "Projects",
+    "Skills",
+    "Contact",
+  ];
   const [Toggle, setToggle] = useState(false);
   function toggleMenu() {
     setToggle(!Toggle);
@@ -13,7 +19,7 @@ export default function Navbar() {
     <div className="w-screen border-b-black h-auto fixed top-0 left-0 flex flex-col z-50 flex-wrap md:bg-white">
       <div className="w-full flex md:flex-row flex-col md:justify-between text-lg items-left ">
         <div className="md:flex-none py-3 px-5 flex flex-row justify-between bg-white">
-          <div className="my-auto font-mono">
+          <div className="my-auto font-heading">
             <RouterLink to="/">ANURAG NALKAR</RouterLink>
           </div>
           <div
@@ -23,13 +29,13 @@ export default function Navbar() {
             +
           </div>
         </div>
-        <motion.div
-          initial={{ y: -100, opacity: 0 }}
-          animate={{
-            y: 0,
-            opacity: 1,
-            transition: { duration: 0.3, ease: "easeIn" },
-          }}
+        <div
+          // initial={{ y: -100, opacity: 0 }}
+          // animate={{
+          //   y: 0,
+          //   opacity: 1,
+          //   transition: { duration: 0.3, ease: "easeIn" },
+          // }}
         >
           <ul
             className={`${
@@ -42,12 +48,12 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-60}
-                duration={500}
+                duration={300}
                 key={index}
-                className="hover:bg-slate-400 hover:text-red-600 hover:font-semibold active:bg-slate-400 active:text-red-600 active:font-semibold rounded-md h-fit"
+                className="active:bg-slate-400 rounded-md h-fit"
               >
                 <li
-                  className="py-2 px-2 lg:px-3 cursor-pointer font-mono hover:bg-red-500 hover:text-white hover:font-semibold active:bg-red-500 active:text-white rounded-md transition-all ease-in-out duration-400 "
+                  className="py-1 px-2 cursor-pointer font-mono hover:bg-slate-200 active:bg-slate-200 rounded-md transition-all ease-in-out duration-400 "
                   onClick={toggleMenu}
                 >
                   {section}
@@ -61,7 +67,7 @@ export default function Navbar() {
             } opacity-50 h-auto min-h-screen w-screen bg-black md:hidden left-0`}
             onClick={toggleMenu}
           ></div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import expData from "../data/expData";
 import { motion } from "motion/react";
-import { easeIn } from "motion";
 
 export default function Exp() {
   const [data, setData] = useState([]);
@@ -9,9 +8,12 @@ export default function Exp() {
     setData(Object.values(expData));
   }, []);
   return (
-    <div className="p-5 flex flex-col gap-10 h-[calc(100dvh-68px)]" id="Experience">
+    <div
+      className="p-5 flex flex-col gap-10 h-[calc(100dvh-68px)]"
+      id="Experience"
+    >
       <div>
-        <p className="lg:text-5xl md:text-4xl text-2xl text-red-600 font-mono">
+        <p className="lg:text-4xl md:text-3xl text-2xl text-red-600 font-heading">
           EXPERIENCE
         </p>
       </div>
@@ -24,7 +26,7 @@ export default function Exp() {
             whileInView={{
               opacity: 1,
               x: 0,
-              transition: { duration: 0.7, ease: "easeIn", delay: key * 0.3 },
+              transition: { duration: 0.7, ease: "easeIn" },
             }}
             viewport={{ once: true }}
           >
@@ -32,10 +34,10 @@ export default function Exp() {
               <img src={exp.logo} alt="Logo" className="rounded-md m-auto" />
             </div>
             <div className="w-auto flex flex-col gap-3">
-              <div className="flex md:flex-row flex-col justify-between text-sm md:text-lg font-serif md:gap-0 gap-3">
+              <div className="flex md:flex-row flex-col justify-between text-sm md:text-lg md:gap-0 gap-3 font-heading">
                 <div className="md:w-[59%] flex flex-col">
                   <div>
-                    <p className="text-lg md:text-2xl font-serif">{exp.role}</p>
+                    <p className="text-lg md:text-2xl">{exp.role}</p>
                   </div>
                   <div>
                     <p>{exp.name}</p>
@@ -51,7 +53,7 @@ export default function Exp() {
                 </div>
               </div>
               <div>
-                <p className="text-sm md:text-lg font-serif text-justify">
+                <p className="text-sm md:text-lg font-body text-justify">
                   {exp.info}
                 </p>
               </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./Navbar";
 import Landing from "./Landing";
 import About from "./About";
 import Exp from "./Exp";
@@ -10,22 +11,27 @@ export default function Home() {
   return (
     <div>
       <div>
-        <Landing />
+        <Navbar />
       </div>
-      <div className="mb-auto">
-        <About />
-      </div>
-      <div>
-        <Exp />
-      </div>
-      <div>
-        <Projects />
-      </div>
-      <div>
-        <Skills />
-      </div>
-      <div>
-        <Footer />
+      <div className="mt-[60px]">
+        <div>
+          <Landing />
+        </div>
+        <div className="mb-auto">
+          <About />
+        </div>
+        <div>
+          <Exp />
+        </div>
+        <div>
+          <Projects />
+        </div>
+        <div>
+          <Skills />
+        </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     </div>
   );
