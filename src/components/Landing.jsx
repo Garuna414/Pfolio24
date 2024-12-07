@@ -5,28 +5,35 @@ import github from "../assets/github.png";
 import mail from "../assets/mail.png";
 import resume from "../assets/resume.pdf";
 import { motion } from "motion/react";
+import landingData from "../data/landingData";
 
 export default function Landing() {
   const stack = ["C++", "PYTHON", "REACT", "EXPRESS", "TAILWIND"];
+
   return (
     <div
       className="w-screen border-y-black flex flex-col items-center h-screen justify-center text-xl px-5 gap-3"
       id="Top"
     >
       <p className="font-body">Hello! This is</p>
-      <motion.div
-        className="flex flex-col gap-1 items-center"
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          transition: { duration: 1.5, ease: "easeInOut" },
-        }}
-      >
-        <p className="text-red-600 font-medium md:text-5xl text-3xl font-heading">
-          ANURAG NALKAR
-        </p>
-      </motion.div>
+      <div className="flex justify-center gap-5">
+        {landingData.name.map((n, key) => (
+          <motion.div
+            initial={{ opacity: 0, translateX: key % 2 === 0 ? -100 : 100 }}
+            whileInView={{
+              opacity: 1,
+              translateX: 0,
+              transition: { duration: 1.5, ease: "easeInOut" },
+            }}
+            key={key}
+          >
+            <p className="text-red-600 font-medium md:text-5xl text-3xl font-heading">
+              {n}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+
       <p className="md:text-lg text-base font-body">Specialised in</p>
       <div className="mb-10 flex flex-col items-center gap-2 w-full">
         <ul className="flex flex-row sm:gap-3 gap-2 font-heading flex-wrap justify-around min-w-fit">

@@ -3,14 +3,6 @@ import { motion } from "motion/react";
 import skills from "../data/skills";
 
 export default function Skills() {
-  const fields = ["LANGUAGES", "FRAMEWORKS & LIBRARIES", "DATABASES", "OTHER"];
-  const techs = [
-    ["C++", "PYTHON", "JAVASCRIPT", "HTML", "CSS"],
-    ["REACT JS", "EXPRESS JS", "FRAMER MOTION", "TAILWIND CSS"],
-    ["SQL", "MONGO DB"],
-    ["GIT", "GITHUB", "VS CODE", "THUNDER CLIENT"],
-  ];
-
   const [skill, setSkill] = useState([]);
   useEffect(() => {
     setSkill(Object.values(skills));
@@ -50,7 +42,7 @@ export default function Skills() {
                     key={key}
                     className="rounded-3xl px-2 py-1 font-body border border-black text-sm md:text-base flex items-center gap-2"
                   >
-                    <img src={field.logos[key]} alt="" className="max-w-7"/>
+                    <img src={field.logos[key]} alt="" className="max-w-7" />
                     {tech}
                   </li>
                 ))}

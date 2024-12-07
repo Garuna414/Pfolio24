@@ -28,10 +28,10 @@ export default function ProjectView() {
 
   return (
     <div className="w-full h-auto min-h-screen flex flex-col gap-5">
-      <div>
+      <div className="fixed top-0 left-0 w-full">
         <BackToHome />
       </div>
-      <div className="h-full w-full px-8 pt-3 pb-5 flex flex-col gap-7">
+      <div className="h-full w-full px-8 pt-3 pb-5 flex flex-col gap-7 mt-[60px]">
         <div className="items-center">
           <img
             src={data.image}
