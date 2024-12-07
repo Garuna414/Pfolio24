@@ -11,9 +11,16 @@ export default function Navbar() {
     "Skills",
     "Contact",
   ];
+  let img = [
+    "https://img.icons8.com/ios/100/menu--v1.png",
+    "https://img.icons8.com/ios/100/delete-sign--v1.png",
+  ];
   const [Toggle, setToggle] = useState(false);
+  const [icon, setIcon] = useState(img[0]);
   function toggleMenu() {
     setToggle(!Toggle);
+    if (Toggle) setIcon(img[0]);
+    else setIcon(img[1]);
   }
   return (
     <div className="w-screen border-b-black h-auto fixed top-0 left-0 flex flex-col z-50 flex-wrap md:bg-white">
@@ -26,17 +33,10 @@ export default function Navbar() {
             className="md:hidden hover:font-bold hover:bg-slate-400 p-2 cursor-pointer rounded-md"
             onClick={toggleMenu}
           >
-            +
+            <img src={icon} alt="Menu" className="max-w-5"/>
           </div>
         </div>
-        <div
-          // initial={{ y: -100, opacity: 0 }}
-          // animate={{
-          //   y: 0,
-          //   opacity: 1,
-          //   transition: { duration: 0.3, ease: "easeIn" },
-          // }}
-        >
+        <div>
           <ul
             className={`${
               Toggle ? "visible" : "hidden"
