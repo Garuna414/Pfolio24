@@ -40,7 +40,7 @@ export default function Landing() {
           {stack.map((tech, key) => (
             <motion.li
               key={key}
-              className="border border-black px-3 py-1 rounded-3xl md:text-lg text-base mb-2"
+              className="border border-black px-3 py-1 rounded-3xl md:text-lg text-base mb-2 flex md:gap-2 items-center gap-1"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{
                 opacity: 1,
@@ -49,7 +49,12 @@ export default function Landing() {
               }}
               viewport={{ margin: "-50px" }}
             >
-              {tech}
+              <img
+                src={landingData.logos[key]}
+                alt="Logo"
+                className="md:max-w-7 max-w-5 max-h-5 md:block hidden"
+              />
+              <p className="text-sm md:text-base">{tech}</p>
             </motion.li>
           ))}
         </ul>
