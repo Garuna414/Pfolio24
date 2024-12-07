@@ -3,7 +3,7 @@ import pfp from "../assets/pfp.png";
 import { motion } from "motion/react";
 
 export default function About() {
-  const headings = ["EDUCATION",  "GOAL", "HOBBIES"];
+  const headings = ["Education",  "Goal", "Hobbies"];
   const content = [
     "I am a final year student, currently pursuing my Bachelors of Engineering in Computer Engineering from University of Mumbai with 8.7 CGPA.",
     "My goal is to become an experienced developer and assume a senior position at a respected organisation, contributing to cutting edge projects and advancing the organisations success.",
