@@ -6,10 +6,16 @@ import Exp from "./Exp";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   return (
     <div>
+      <Helmet>
+        <title>Home</title>
+        <meta name="description" content="Home for Anurags portfolio website."/>
+        <link rel="canonical" href="/"/>
+      </Helmet>
       <div>
         <Navbar />
       </div>
