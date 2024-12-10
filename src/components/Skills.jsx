@@ -10,7 +10,7 @@ export default function Skills() {
 
   return (
     <div
-      className="p-5 flex flex-col md:h-screen h-auto md:min-h-[calc(100dvh-68px)] md:gap-0 gap-5"
+      className="p-5 flex flex-col md:h-screen h-auto md:min-h-[calc(100vh-60px)] md:gap-0 gap-5"
       id="Skills"
     >
       <p className="lg:text-4xl md:text-3xl text-2xl text-red-600 font-heading">

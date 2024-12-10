@@ -11,7 +11,7 @@ export default function About() {
   ];
   return (
     <div
-      className="flex flex-col p-5 h-[calc(100dvh-68px)]"
+      className="flex flex-col p-5 h-[calc(100vh-60px)]"
       id="About Me"
     >
       <div>

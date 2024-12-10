@@ -11,7 +11,7 @@ export default function Projects() {
 
   return (
     <div
-      className="p-5 flex flex-col gap-5 h-auto w-full min-h-[calc(100dvh-68px)]"
+      className="p-5 flex flex-col gap-5 h-auto w-full min-h-[calc(100vh-60px)]"
       id="Projects"
     >
       <div>

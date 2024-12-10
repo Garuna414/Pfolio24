@@ -9,7 +9,7 @@ export default function Exp() {
   }, []);
   return (
     <div
-      className="p-5 flex flex-col gap-10 h-[calc(100dvh-68px)]"
+      className="p-5 flex flex-col gap-10 h-[calc(100vh-60px)]"
       id="Experience"
     >
       <div>
