@@ -19,7 +19,7 @@ export default function Projects() {
           PROJECTS
         </p>
       </div>
-      <div className="flex flex-row h-full gap-5 overflow-x-auto scrollbar scrollbar-visible flex-nowrap w-full overflow-y-hidden snap-x snap-mandatory justify-between pb-5 lg:pb-0">
+      <div className="flex md:flex-row flex-col h-full gap-5 overflow-x-auto flex-nowrap w-full overflow-y-hidden md:snap-x md:snap-mandatory justify-between pb-5">
         {projects.map((project, index) => (
           <motion.div
             className="snap-center w-full"
