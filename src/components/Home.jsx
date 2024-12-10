@@ -23,7 +23,7 @@ export default function Home() {
         <div>
           <Landing />
         </div>
-        <div className="mb-auto">
+        <div>
           <About />
         </div>
         <div>
