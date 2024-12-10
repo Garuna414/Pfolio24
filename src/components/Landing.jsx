@@ -6,6 +6,7 @@ import mail from "../assets/mail.png";
 import resume from "../assets/resume.pdf";
 import { motion } from "motion/react";
 import landingData from "../data/landingData";
+import Arrow from "./Arrow";
 
 export default function Landing() {
   const stack = ["C++", "PYTHON", "REACT", "EXPRESS", "TAILWIND"];
@@ -35,7 +36,7 @@ export default function Landing() {
       </div>
 
       <p className="md:text-lg text-base font-body">Specialised in</p>
-      <div className="mb-10 flex flex-col items-center gap-2 w-full">
+      <div className="md:mb-10 mb-5 flex flex-col items-center gap-2 w-full">
         <ul className="flex flex-row sm:gap-3 gap-2 font-heading flex-wrap justify-around min-w-fit">
           {stack.map((tech, key) => (
             <motion.li
@@ -59,7 +60,7 @@ export default function Landing() {
           ))}
         </ul>
       </div>
-      <div className="md:mb-8 mb-12">
+      <div className="md:mb-8 mb-5">
         <button className="hover:bg-red-600 bg-white px-5 py-2 hover:text-white rounded-3xl hover:shadow-md border border-black hover:shadow-slate-400 hover:scale-110 transition-all ease-in-out duration-400 font-heading">
           <a
             href={resume}
@@ -91,6 +92,11 @@ export default function Landing() {
             <img src={mail} alt="LinkedIn" />
           </a>
         </button>
+      </div>
+      <div className="w-full pt-5">
+        <Arrow delay={0.5} />
+        <Arrow delay={1} />
+        <Arrow delay={1.5} />
       </div>
     </div>
   );
